@@ -1,0 +1,461 @@
+@charset "utf-8";
+/* 
+*
+*
+*
+Author: Jay Manalansan
+Ai Kiosk
+*
+*
+*
+Feelin' sly!
+*
+*
+*/
+
+/* Table of Contents 
+*
+*
+* Reset
+* Fonts
+
+
+/* ------------------------------- */
+
+/* Reset */
+
+html
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  min-width: 1000px;
+  background: #FFFFFF;
+}
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+  body,
+  div,
+  dl,dt,dd,
+  ul,ol,li,
+  h1,h2,h3,h4,h5,h6,
+  pre,
+  form,fieldset,
+  input,textarea,
+  a,
+  p,blockquote,
+  th,td 
+  { 
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+    
+  img 
+  {
+   border: 0
+  }
+    
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var 
+  {
+    font-style: normal;
+    font-weight: normal;
+  }
+    
+  ol,ul 
+  {
+    list-style: none;
+  }
+    
+  h1,h2,h3,h4,h5,h6 
+  {
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+  a:link, a:visited, a:hover, a:active {
+	text-decoration:none;
+  }
+/* ------------------------------- */
+
+
+/* Fonts */
+ 
+@font-face {
+    font-family: 'Avenir-Roman';
+	src: url('../typefaces/avenirltstd-roman-webfont.eot'); /* IE */
+    src: local("avenirltstd-roman"), url('../typefaces/avenirltsted-roman-webfont.ttf') format("truetype"); /* non-IE */
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+	src: url('../typefaces/avenirltsted-heavy-webfont.eot'); /* IE */
+	src: local("avenirltstd-heavy"), url('../typefaces/avenirltstd-heavy-webfont.ttf') format("truetype"); /* non-IE */
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing: normal;
+}
+
+/* ------------------------------- */
+
+
+/* Main */
+
+body{
+	background-image: url(../sources/bg.png);
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
+	margin: 0px 0px; 
+	padding: 0px;
+	text-align: left;
+}
+
+#container {
+	width: 1680px;	
+}
+
+#header {
+	text-align: center;	
+	padding-top: 69px;
+}
+
+#main_bottom ul {
+	padding-left: 69px;
+	padding-top: 140px;
+	
+}
+
+#main_bottom li {
+	float: left; 
+	padding-left: 70px;	
+}
+
+#nav {
+	color: #54b948;
+	font-family: Avenir-Heavy, Arial, Helvetica, sans-serif;	
+	font-size: 59px;
+	float: left;
+	position: relative; 
+	top: -13px;
+}
+.nav {
+	color: #fff;
+}
+.design_link_active{
+	color: #54b948;	
+}
+#design_link a:hover{
+	color: #54b948;	
+}
+
+.media_link_active{
+	color: #0079c1;	
+}
+#media_link a:hover{
+	color: #0079c1;	
+}
+
+.fashion_link_active{
+	color: #7f3f98;	
+}
+#fashion_link a:hover{
+	color: #7f3f98;	
+}
+
+.culinary_link_active{
+	color: #f68a33;	
+}
+#culinary_link a:hover{
+	color: #f68a33;	
+}
+
+#house {
+	position: relative;
+	top: 252px;	
+}
+/* ------------------------------- */
+
+
+/* Design */
+
+
+
+#design_right {
+	width: 690px;	
+	float: left;
+}
+
+#design_right li {
+	float: left;
+	padding-left: 55px;	
+	padding-bottom: 40px;
+}
+
+#design_body {
+	position: relative;
+	top: 50px;
+	padding-left: 135px;	
+}
+
+/* ------------------------------- */
+
+
+/* Media */
+
+
+#media_right {
+	width: 1100px;	
+	float: left;
+}
+
+#media_right li {
+	float: left;
+	padding-left: 55px;	
+	padding-bottom: 40px;
+}
+
+#media_body {
+	position: relative;
+	top: 50px;
+	padding-left: 135px;	
+}
+
+/* ------------------------------- */
+
+
+/* Fashion */
+
+
+
+#fashion_right {
+	width: 690px;	
+	float: left;
+}
+
+#fashion_right li {
+	float: left;
+	padding-left: 55px;	
+	padding-bottom: 40px;
+}
+
+#fashion_body {
+	position: relative;
+	top: 50px;
+	padding-left: 135px;	
+}
+
+
+/* ------------------------------- */
+
+
+/* Culinary */
+
+
+
+#culinary_right {
+	width: 690px;	
+	float: left;
+}
+
+#culinary_right li {
+	float: left;
+	padding-left: 55px;	
+	padding-bottom: 40px;
+}
+
+#culinary_body {
+	position: relative;
+	top: 50px;
+	padding-left: 135px;	
+}
+
+/* ------------------------------- */
+
+
+
+/* Program */
+
+#program_left {
+	float: left;	
+}
+#program_left p {
+	width: 195px;
+	color: #00bce4;
+	font-size: 30px;	
+}
+#program_right {
+	width: 1100px;	
+	float: left;
+}
+#gallery {
+	height: 560px;	
+}
+#gallery li {
+	float: left;
+	padding-left: 55px;	
+	padding-bottom: 40px;	
+}
+#program_body {
+	position: relative;
+	top: 50px;
+	padding-left: 135px;	
+}
+
+#gallery_pagination {
+	clear: both;
+	text-align: right;
+	padding-right: 180px;	
+	position: relative;
+	top: -20px;
+}
+
+.prev_btn {
+	padding-right: 10px;	
+}
+/* ------------------------------- */
+
+/* Project */
+
+#project_container {
+	height: 881px;
+	width: 1520px;
+	background-color: #000;	
+	margin: 0 auto;
+}
+
+#project_left {
+	position: relative; 
+	top: 0px;
+	padding-left: 20px;
+	width: 1024px;
+	float: left;
+}
+
+#project_right {
+	width: 430px;
+	color: #FFF;
+	float: left;	
+	position: relative;
+	top: 0px;
+	padding-left: 25px;
+}
+
+#project_right h2 {
+	font-size: 20px;	
+	padding-top: 10px;
+}
+
+#project_right h3 {
+	font-size: 19px;
+	padding-top: 0px;	
+	font-style: italic;
+}
+
+#project_right p {
+	font-size: 16px;	
+}
+
+#project_title {
+	background-image:url(../sources/project_hr.png);
+	background-repeat: repeat-x;
+	background-position:center;
+	height: 80px;	
+	
+}
+
+#project_title h2 {
+	height: 20px;
+	padding-bottom: 12px;	
+}
+#project_author {
+	background-image:url(../sources/project_hr.png);
+	background-repeat: repeat-x;
+	background-position:center;
+	height: 80px;	
+	position: relative;
+	top: 20px;
+}
+
+#project_author h2 {
+	height: 20px;
+	padding-bottom: 12px;
+}	
+
+#project_program {
+	background-image:url(../sources/project_hr.png);
+	background-repeat: repeat-x;
+	background-position:center;
+	height: 80px;
+	position: relative;
+	top: 40px;	
+}
+
+#project_program h2 {
+	height: 20px;
+	padding-bottom: 12px;
+}	
+
+#project_description {
+	background-image:url(../sources/project_hr.png);
+	background-repeat: repeat-x;
+	background-position:bottom;
+	position: relative;
+	top: 55px;
+}
+
+#project_description p {
+	line-height: 120%;
+	padding-bottom: 10px;
+		
+}
+.desc_fix {
+	position: relative;
+	top: 56px;
+}
+
+.WDIM h2{
+	color: #00bce4;	
+}
+
+
+/* ------------------------------- */
+
+/* Admin */
+
+
+#admin_log, #registration, #admin_body, #area_body, #add_body {
+	width: 400px;
+	margin: 0 auto;
+	text-align: left;	
+	padding-top: 400px;
+	color: #fff;
+}
+
+#login .input {
+	
+}
+

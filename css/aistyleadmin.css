@@ -1,0 +1,451 @@
+@charset "utf-8";
+/* 
+*
+*
+*
+Author: Jay Manalansan
+Ai Kiosk
+*
+*
+*
+Feelin' sly!
+*
+*
+*/
+
+/* Table of Contents 
+*
+*
+* Reset
+* Fonts
+
+
+/* ------------------------------- */
+
+/* Reset */
+
+html
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  min-width: 1000px;
+  background: #FFFFFF;
+}
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+  body,
+  div,
+  dl,dt,dd,
+  ul,ol,li,
+  h1,h2,h3,h4,h5,h6,
+  pre,
+  form,fieldset,
+  input,textarea,
+  a,
+  p,blockquote,
+  th,td 
+  { 
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+    
+  img 
+  {
+   border: 0
+  }
+    
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var 
+  {
+    font-style: normal;
+    font-weight: normal;
+  }
+    
+  ol,ul 
+  {
+    list-style: none;
+  }
+    
+  h1,h2,h3,h4,h5,h6 
+  {
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+  a:link, a:visited, a:hover, a:active {
+	text-decoration:none;
+  }
+/* ------------------------------- */
+
+
+/* Fonts */
+ 
+@font-face {
+    font-family: 'Avenir-Roman';
+	src: url('../typefaces/avenirltstd-roman-webfont.eot'); /* IE */
+    src: local("avenirltstd-roman"), url('../typefaces/avenirltsted-roman-webfont.ttf') format("truetype"); /* non-IE */
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+	src: url('../typefaces/avenirltsted-heavy-webfont.eot'); /* IE */
+	src: local("avenirltstd-heavy"), url('../typefaces/avenirltstd-heavy-webfont.ttf') format("truetype"); /* non-IE */
+    font-weight: normal;
+    font-style: normal;
+	letter-spacing: normal;
+}
+
+/* ------------------------------- */
+
+
+/* Main */
+
+body{
+	background-image: url(../sources/bg.png);
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
+	margin: 0px 0px; 
+	padding: 0px;
+	text-align: left;
+	color: #fff;
+}
+
+#container {
+	width: 1680px;	
+	margin: 105px auto; 
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
+}
+
+#kiosk_front {
+	float: left;
+	text-align: center;
+	padding-left: 100px;
+}
+#header, #admin_log, #admin_reg, #admin_newpw {
+	margin: 0px auto;	
+	width: 670px;
+}
+
+#header h1 {
+	font-size: 70px;
+	font-family: Avenir-Heavy, Arial, Helvetica, sans-serif;	
+}
+
+#header h2 {
+	font-size: 30px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;	
+	padding-top: 10px;
+}
+
+#header p {
+	font-size: 20px;
+	width: 450px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+}
+
+#admin_log {
+	font-size: 30px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;	
+	padding-top: 20px;
+}
+
+#admin_log input {
+	display: block;
+	width: 670px;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+
+#submit input {
+	padding-top: 60px;
+	width: 670px;
+	height: 68px;
+	background-image:url(../admin/sources/admin_landing.png);
+	background-repeat: no-repeat;
+	border: none;
+	text-indent: -1000em;
+	cursor:pointer;
+	position: relative;
+	top: 30px;
+}
+.forgot {
+	font-size: 18px;
+	float: right;	
+	font-style: oblique;
+	position: relative;
+	top: -15px;
+}
+a:link {
+	color: #fff;
+	text-decoration:underline;	
+}
+/* ------------------------------- */
+
+/* Admin Reg*/
+
+#admin_reg {
+	font-size: 30px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;	
+	padding-top: 20px;
+	
+}
+
+#admin_reg ul {
+	font-size: 14px;
+	color: 	rgb(238, 49, 36);
+	width: 670px;
+}
+
+#admin_reg h3 {
+	font-size: 17px;
+}
+#admin_reg input {
+	display: block;
+	width: 670px;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	
+}
+
+#submit input {
+	padding-top: 60px;
+	width: 670px;
+	height: 68px;
+	background-image:url(../admin/sources/admin_landing.png);
+	background-repeat: no-repeat;
+	border: none;
+	text-indent: -1000em;
+	cursor:pointer;
+	position: relative;
+	top: 30px;
+}
+
+.form_sm {
+	font-size: 12px;	
+}
+
+#kiosk_nav {
+	float: left;
+	text-align: left;
+	padding-left: 100px;	
+}
+
+#kiosk_nav p {
+	padding-bottom: 20px;	
+}
+/* ------------------------------- */
+
+/* Admin New pw*/
+#admin_newpw {
+	font-size: 30px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;	
+	padding-top: 20px;
+	
+}
+
+#admin_newpw ul {
+	font-size: 14px;
+	color: 	rgb(238, 49, 36);
+	width: 670px;
+}
+
+#admin_newpw h3 {
+	font-size: 17px;
+}
+#admin_newpw input {
+	display: block;
+	width: 670px;
+	height: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	
+}
+
+/* ------------------------------- */
+
+/* Dashboard */
+
+#dashboard ul {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 60px;
+	width: 750px;
+}
+#dashboard li {
+	float: left;
+	padding-right: 60px;
+}
+
+#logout_button input {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	float: right;	
+	font-size: 16px;
+	text-decoration: underline;
+	position: relative;
+	left: -3px;
+	margin-top: 3px;
+}
+
+/* ------------------------------- */
+
+/* Add Area */
+
+#add_area ul {
+	clear: both;
+	padding-top: 80px;
+	padding-left: 135px;
+
+}
+#add_area li {
+	float: left;
+	padding-right: 60px;
+}
+
+#add_left {
+	float: left;
+	width: 670px
+	height: 630px;	
+	padding-left: 135px;
+	padding-top: 50px;
+}
+
+#add_left img {
+	padding: 10px 0px 10px 0px;	
+}
+#add_right {
+	float: left;	
+	width: 670px;
+	height: 630px;
+	padding-left: 70px;
+	padding-top: 50px;
+}
+
+#add_right label {
+	display: block;	
+	margin-bottom: 20px;
+	font-family: Avenir-Roman, Arial, Helvetica, sans-serif;
+}
+
+#add_right input {
+	width: 670px;
+	height: 40px;	
+	background-color: #333;
+	border-top:thick;
+	border-top-color: #444;
+	border-left:thick;
+	border-left-color: #444;
+	border-right:thick;
+	border-right-color: #444;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+#add_submit input {
+	padding-top: 60px;
+	width: 670px;
+	height: 68px;
+	background-image:url(../admin/sources/admin_landing.png);
+	background-repeat: no-repeat;
+	border: none;
+	text-indent: -1000em;
+	cursor:pointer;
+	position: relative;
+	top: 30px;
+
+}
+
+#add_right select {
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;	
+}
+
+#add_right textarea {
+	background-color: #333;
+	color: #fff;
+	font-size: 16px;	
+	width: 670px;
+	height: 200px;
+}
+
+/* ------------------------------- */
+
+/* Edit Area */
+
+#edit_program_list {
+	width: 1410px;
+}
+
+#edit_program_list ul {
+	margin-left: 200px;	
+	padding-top: 20px;
+}
+
+#edit_program_list li {
+	float: left;	
+	padding-left: 85px;
+	padding-top: 40px; 
+}
+
+/* ------------------------------- */
+
+/* Edit project */
+
+.edit_project_list {
+	width: 1410px;
+}
+
+.edit_project_list ul {
+	margin-left: 200px;	
+	padding-top: 20px;
+}
+
+.edit_project_list li {
+	float: left;	
+	padding-left: 85px;
+	padding-top: 40px; 
+	
+}
+
+/* ------------------------------- */
+
+/* Edit project */
+
+#delete_project {
+	width: 670px;
+	margin: 0 auto;
+}
+
